@@ -1,0 +1,18 @@
+1. I have made a mini replica of shortest job first scheduler in working.. by using a queue interface(which is implemented by linkedlist) in java. The arrival time 
+by default I am considering 0( means all the process arrive at same time). 
+
+2. Asked users to give burst time and process Id as i/p. which is being stored in a list of hashmap- made a customised comparator using which i am sorting the arraylist
+on the basis of burst time.
+
+3. Just to show how processess will execute, I have added a wait function for their respective burst times, using the wait method present in the java.lang.object 
+package.
+
+Concl: It only occured to me after I wrote the whole program, that i could have created an abstract data type than using a readymade hashmap.
+Ex -
+Class ProcessDetails {
+String ProcessId;
+int butstTime;
+.... 
+}
+and pass this as a type check for the Arraylist. 
+Thankyou
